@@ -31,7 +31,34 @@
                     WorkTask workTask = new WorkTask();
                     Console.Write("Work Task Name: ");
                     workTask.TaskName = Console.ReadLine();
-                                        
+
+
+                    Console.Write("Type of Task: ");
+                    workTask.TaskType = Console.ReadLine();
+
+
+                    Console.Write("Task Due: ");
+                    workTask.TaskDue = Console.ReadLine();
+
+                    tasks.Add(workTask);
+                    Console.WriteLine("Task Added to List");
+                }
+               else  if (menu == 2)
+                {
+                  SchoolTask schoolTask= new SchoolTask();
+                    Console.Write("School Task Name: ");
+                    schoolTask.TaskName = Console.ReadLine();
+
+
+                    Console.Write("Type of Task: ");
+                    schoolTask.TaskName = Console.ReadLine();
+
+
+                    Console.Write("Task Due: ");
+                    schoolTask.TaskName = Console.ReadLine();
+
+                    tasks.Add(schoolTask);
+                    Console.WriteLine("Task Added to List");
                 }
             }
         }
