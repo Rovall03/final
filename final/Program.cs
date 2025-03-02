@@ -26,7 +26,7 @@
                     continue;
                 }
 
-                if (menu ==1)
+                if (menu == 1)
                 {
                     WorkTask workTask = new WorkTask();
                     Console.Write("Work Task Name: ");
@@ -43,24 +43,46 @@
                     tasks.Add(workTask);
                     Console.WriteLine("Task Added to List");
                 }
-               else  if (menu == 2)
+                else if (menu == 2)
                 {
-                  SchoolTask schoolTask= new SchoolTask();
+                    SchoolTask schoolTask = new SchoolTask();
                     Console.Write("School Task Name: ");
                     schoolTask.TaskName = Console.ReadLine();
 
 
                     Console.Write("Type of Task: ");
-                    schoolTask.TaskName = Console.ReadLine();
+                    schoolTask.TaskType = Console.ReadLine();
 
 
                     Console.Write("Task Due: ");
-                    schoolTask.TaskName = Console.ReadLine();
+                    schoolTask.TaskDue = Console.ReadLine();
 
                     tasks.Add(schoolTask);
                     Console.WriteLine("Task Added to List");
                 }
+                else if (menu == 3)
+                {
+                    foreach (Task task in tasks)
+                    {
+                        task.TaskInfo();
+                    }
+                }
+
+                else if (menu == 4)
+
+                {
+
+
+                }
+                else if (menu == 5) 
+                {
+                    Console.WriteLine("Goodbye");
+                break;
+                }
+
             }
+
+
         }
     }
 }

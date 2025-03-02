@@ -12,7 +12,6 @@ namespace final
         private string _taskDue;
         private string _taskType;
 
-
        public string TaskName
         {
             get { return _taskName; }
@@ -32,7 +31,7 @@ namespace final
         public string TaskType 
         { get  { return _taskType; }
             set {
-                if (!string.IsNullOrWhiteSpace(value))
+                if (string.IsNullOrWhiteSpace(value))
                     throw new ArgumentNullException("Must input type ");
                 _taskType = value; }
         }
