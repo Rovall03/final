@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace final
 {
-    internal class SchoolTask
+    internal class SchoolTask : Task
     {
+        public override void TaskInfo()
+        {
+            Console.WriteLine($"Task: {TaskName},Due: {TaskDue}, Type of Task: {TaskType}");
+        }
     }
 }
