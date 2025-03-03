@@ -1,4 +1,8 @@
-﻿namespace final
+﻿// Author: Rosa Ovalle
+// Course: COMP-003A
+// Faculty: Jonathan Cruz
+// Purpose:Final 
+namespace final
 {
     internal class Program
     {/// <summary>
