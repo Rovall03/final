@@ -8,7 +8,12 @@ using System.Threading.Tasks;
 namespace final
 {
     internal class TaskUtility
-    {
+    {/// <summary>
+    /// task in wuth the name date due and  type of task 
+    /// </summary>
+    /// <param name="name"></param>
+    /// <param name="dueDate"></param>
+    /// <param name="type"></param>
                        
         public static void TaskInfo(string name, string dueDate,string type)
         {
