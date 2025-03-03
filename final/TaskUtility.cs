@@ -9,21 +9,11 @@ namespace final
 {
     internal class TaskUtility
     {
-        public static void TaskInfo(string name)
-        {
-            Console.WriteLine($"Task: {name}");
-
-        }
-        public static void TaskInfo(string name,string dueDate)
-        {
-            TaskInfo(name);
-            Console.WriteLine($"Due Date: {dueDate}"); 
-        
-        }
+                       
         public static void TaskInfo(string name, string dueDate,string type)
         {
-            TaskInfo(name,dueDate);
-            Console.WriteLine($"Type of Task: {type}");
+            
+            Console.WriteLine($"Type of Task: {type},Due Date: {dueDate},Task: {name}");
 
         }
 
