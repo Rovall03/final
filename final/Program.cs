@@ -4,13 +4,16 @@
     {
         static void Main(string[] args)
         {
+
             List<Task> tasks = new List<Task>();
             while (true)
             {
+                
                 if (tasks.Count >= 50)
                 {
                     break;
                 }
+                
                 Console.WriteLine("Task Managent Sytem");
                 int menu = 0;
                 Console.WriteLine("Please choose an option");
@@ -21,7 +24,7 @@
                 Console.WriteLine("5 Romove Task from List ");
                 Console.WriteLine("6 Exit");
                 Console.Write("Your choice: ");
-
+                
                 try
                 {
                     menu = int.Parse(Console.ReadLine());
